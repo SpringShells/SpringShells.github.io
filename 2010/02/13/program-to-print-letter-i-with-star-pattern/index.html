@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C语言练习-C程序用星形图案打印i | SpringSongs</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+		            var _hmt = _hmt || [];
+		            (function() {
+		            var hm = document.createElement("script");
+		            hm.src = "https://hm.baidu.com/hm.js?2d8cd4f00e238b5b4eaacb204a14ae05";
+		            var s = document.getElementsByTagName("script")[0]; 
+		            s.parentNode.insertBefore(hm, s);
+		        </script>
+    <link rel="alternate" type="application/rss+xml" href="https://www.springsongs.cn/rss.xml" title="SpringSongs RSS Feed">
+    <meta name="description" content="用10*11网格
+>如果行号等于1或者10打印星号
+>如果列号等于6打印星号
+>其他打印空格
+/*
+ ============================================================================
+ Name        : main.c
+ Author      : SpringSongs
+ Version     : 0. ...">
+    <meta name="robots" content="all">
+    <meta name="author" content="SpringSongs">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础,灵山计算机,灵山计算机平面设计,灵山CAD设计,灵山3DMAX设计,灵山计算机教育,灵山编程网,灵山java教育,灵山C#教育,灵山电脑教育,灵山PHP教育,灵山GO语言教育,灵山Python语言教育,灵山SpringBoot教育,灵山SpringCloud教育,灵山单片机教育,灵山网页制作,灵山网站设计,灵山网页建设,灵山网站建设">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.7d0f71b3.css" as="style"><link rel="preload" href="/assets/js/app.3a674918.js" as="script"><link rel="preload" href="/assets/js/6.c79ae046.js" as="script"><link rel="preload" href="/assets/js/3.e5170992.js" as="script"><link rel="preload" href="/assets/js/58.14baea7b.js" as="script"><link rel="prefetch" href="/assets/js/10.ad46e93f.js"><link rel="prefetch" href="/assets/js/11.67d1aee1.js"><link rel="prefetch" href="/assets/js/12.18598fcf.js"><link rel="prefetch" href="/assets/js/13.8cea7fad.js"><link rel="prefetch" href="/assets/js/14.213bb038.js"><link rel="prefetch" href="/assets/js/15.b119132c.js"><link rel="prefetch" href="/assets/js/16.c22c9706.js"><link rel="prefetch" href="/assets/js/17.c0ab82b0.js"><link rel="prefetch" href="/assets/js/18.aeecdd67.js"><link rel="prefetch" href="/assets/js/19.ca15c7bb.js"><link rel="prefetch" href="/assets/js/20.dbb750f2.js"><link rel="prefetch" href="/assets/js/21.47b203c6.js"><link rel="prefetch" href="/assets/js/22.e9c7a5ce.js"><link rel="prefetch" href="/assets/js/23.ad2ce4ee.js"><link rel="prefetch" href="/assets/js/24.a90eceea.js"><link rel="prefetch" href="/assets/js/25.4fcb442b.js"><link rel="prefetch" href="/assets/js/26.5d9dd85c.js"><link rel="prefetch" href="/assets/js/27.ba093dae.js"><link rel="prefetch" href="/assets/js/28.07b8c81a.js"><link rel="prefetch" href="/assets/js/29.ed0700e4.js"><link rel="prefetch" href="/assets/js/30.e22de0b6.js"><link rel="prefetch" href="/assets/js/31.f258e0ac.js"><link rel="prefetch" href="/assets/js/32.45e6a5c3.js"><link rel="prefetch" href="/assets/js/33.9e5fdad2.js"><link rel="prefetch" href="/assets/js/34.6ed521df.js"><link rel="prefetch" href="/assets/js/35.86bf4e59.js"><link rel="prefetch" href="/assets/js/36.e2147558.js"><link rel="prefetch" href="/assets/js/37.e03617c9.js"><link rel="prefetch" href="/assets/js/38.3a86909e.js"><link rel="prefetch" href="/assets/js/39.d12fc587.js"><link rel="prefetch" href="/assets/js/4.8143a82c.js"><link rel="prefetch" href="/assets/js/40.5e0ea3c6.js"><link rel="prefetch" href="/assets/js/41.ce7a8a09.js"><link rel="prefetch" href="/assets/js/42.5082a483.js"><link rel="prefetch" href="/assets/js/43.ae07eb9f.js"><link rel="prefetch" href="/assets/js/44.e2b07fde.js"><link rel="prefetch" href="/assets/js/45.bad8c2de.js"><link rel="prefetch" href="/assets/js/46.34150efe.js"><link rel="prefetch" href="/assets/js/47.1fa3ea6f.js"><link rel="prefetch" href="/assets/js/48.813654be.js"><link rel="prefetch" href="/assets/js/49.3721ce33.js"><link rel="prefetch" href="/assets/js/5.e85a075c.js"><link rel="prefetch" href="/assets/js/50.df615116.js"><link rel="prefetch" href="/assets/js/51.2c58f612.js"><link rel="prefetch" href="/assets/js/52.8f2113db.js"><link rel="prefetch" href="/assets/js/53.2313bd49.js"><link rel="prefetch" href="/assets/js/54.a46b9e06.js"><link rel="prefetch" href="/assets/js/55.9720f989.js"><link rel="prefetch" href="/assets/js/56.0602094a.js"><link rel="prefetch" href="/assets/js/57.8a62c486.js"><link rel="prefetch" href="/assets/js/59.912ecb5e.js"><link rel="prefetch" href="/assets/js/60.395aa791.js"><link rel="prefetch" href="/assets/js/61.9db20631.js"><link rel="prefetch" href="/assets/js/62.692940c7.js"><link rel="prefetch" href="/assets/js/63.8b98575f.js"><link rel="prefetch" href="/assets/js/64.7a4b6439.js"><link rel="prefetch" href="/assets/js/65.7d843cee.js"><link rel="prefetch" href="/assets/js/66.c6ceb2d9.js"><link rel="prefetch" href="/assets/js/67.ffc79f1e.js"><link rel="prefetch" href="/assets/js/68.c5d9180c.js"><link rel="prefetch" href="/assets/js/69.cf292eb4.js"><link rel="prefetch" href="/assets/js/7.14b5df73.js"><link rel="prefetch" href="/assets/js/70.e46f6140.js"><link rel="prefetch" href="/assets/js/71.bf7829e9.js"><link rel="prefetch" href="/assets/js/72.8796f2a3.js"><link rel="prefetch" href="/assets/js/73.85d32600.js"><link rel="prefetch" href="/assets/js/74.5493f9d5.js"><link rel="prefetch" href="/assets/js/75.0b4ac696.js"><link rel="prefetch" href="/assets/js/76.f9ed4a7a.js"><link rel="prefetch" href="/assets/js/77.c5160568.js"><link rel="prefetch" href="/assets/js/78.21c85456.js"><link rel="prefetch" href="/assets/js/79.ecb68d6f.js"><link rel="prefetch" href="/assets/js/8.f00396dd.js"><link rel="prefetch" href="/assets/js/80.ab10a102.js"><link rel="prefetch" href="/assets/js/81.96ad6692.js"><link rel="prefetch" href="/assets/js/82.7daf01bb.js"><link rel="prefetch" href="/assets/js/83.9c5784a8.js"><link rel="prefetch" href="/assets/js/84.027f34ae.js"><link rel="prefetch" href="/assets/js/85.aa85e120.js"><link rel="prefetch" href="/assets/js/86.16294ced.js"><link rel="prefetch" href="/assets/js/87.8e011808.js"><link rel="prefetch" href="/assets/js/88.7a868d8d.js"><link rel="prefetch" href="/assets/js/89.0ccaeadf.js"><link rel="prefetch" href="/assets/js/9.350ef361.js"><link rel="prefetch" href="/assets/js/90.1746cf52.js"><link rel="prefetch" href="/assets/js/91.4ca5a7f0.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.e9164293.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7d0f71b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">SpringSongs </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">博客</a></li><li class="nav-item"><a href="/tag/" class="nav-link">文章分类</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <a href="/rss.xml" class="feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">SpringSongs </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">文章分类</a></li> <li class="mobile-nav-item"><a href="/rss.xml" class="feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        C语言练习-C程序用星形图案打印i
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">SpringSongs</span> <span itemprop="address">   in China</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2010-02-13T00:00:00.000Z">
+      Sat Feb 13 2010
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-532d3a9c><a href="/tag/C语言练习" data-v-532d3a9c><span data-v-532d3a9c>C语言练习</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><blockquote><p>用10*11网格
+如果行号等于1或者10打印星号
+如果列号等于6打印星号
+其他打印空格</p></blockquote> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token comment">/*
+ ============================================================================
+ Name        : main.c
+ Author      : SpringSongs
+ Version     : 0.0.1
+ Description : 程序用星形图案打印I, Ansi-style
+ ============================================================================
+ 打印如下：
+***********
+     *     
+     *     
+     *     
+     *     
+     *     
+     *     
+     *     
+     *     
+***********
+
+ */</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> j<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> middle <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> <span class="token number">11</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">||</span> i <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">==</span> middle<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div></div> <footer><!----> <hr> <!----></footer></article> <!----></div></div> <footer class="footer" data-v-8eb634d6><div class="footer-left-wrap" data-v-8eb634d6><ul class="contact" data-v-8eb634d6><li class="contact-item" data-v-8eb634d6><a href="/2010/02/13/program-to-print-letter-i-with-star-pattern/.html#" class="nav-link" data-v-8eb634d6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-8eb634d6><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-8eb634d6></path></svg>
+          
+        </a></li><li class="contact-item" data-v-8eb634d6><a href="/2010/02/13/program-to-print-letter-i-with-star-pattern/.html#" class="nav-link" data-v-8eb634d6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-8eb634d6><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-8eb634d6></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-8eb634d6><ul class="copyright" data-v-8eb634d6><li class="copyright-item" data-v-8eb634d6><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-8eb634d6>Privacy Policy</a></li><li class="copyright-item" data-v-8eb634d6>MIT Licensed | Copyright © 2018-present SpringSongs</li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a674918.js" defer></script><script src="/assets/js/6.c79ae046.js" defer></script><script src="/assets/js/3.e5170992.js" defer></script><script src="/assets/js/58.14baea7b.js" defer></script>
+  </body>
+</html>
