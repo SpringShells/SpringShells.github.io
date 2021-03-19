@@ -4,7 +4,7 @@
         <title>SpringSongs</title>
         <link>https://www.springsongs.cn</link>
         <description>快乐编程</description>
-        <lastBuildDate>Fri, 19 Mar 2021 10:40:52 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Mar 2021 14:45:39 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -39,20 +39,6 @@ DataType functionname ( [argtype arg1, ..., arg_type argN]){body}
 ::: tip ...]]></description>
         </item>
         <item>
-            <title><![CDATA[C语言练习-用C程序打印星形正方形]]></title>
-            <link>https://www.springsongs.cn/2010/01/01/program-to-print-square-with-star-pattern/</link>
-            <guid>https://www.springsongs.cn/2010/01/01/program-to-print-square-with-star-pattern/</guid>
-            <pubDate>Fri, 01 Jan 2010 00:00:00 GMT</pubDate>
-            <description><![CDATA[用5*5网格
-> 启动一个外部循环(行)，将迭代5次。
-> 在外部循环下开始一个内部循环(列)，迭代相同的次数在内部循环中打印星号。
-
-/*
- ============================================================================
- Name        : LearnC001.c
- Author      : Sp ...]]></description>
-        </item>
-        <item>
             <title><![CDATA[C语言基础-预处理命令]]></title>
             <link>https://www.springsongs.cn/2008/02/08/c-define/</link>
             <guid>https://www.springsongs.cn/2008/02/08/c-define/</guid>
@@ -65,6 +51,37 @@ DataType functionname ( [argtype arg1, ..., arg_type argN]){body}
 int main(){
     if (AGE==30){
         printf ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[C语言练习-用C程序打印数字正方形]]></title>
+            <link>https://www.springsongs.cn/2010/01/02/program-to-print-square-with-number-pattern/</link>
+            <guid>https://www.springsongs.cn/2010/01/02/program-to-print-square-with-number-pattern/</guid>
+            <pubDate>Sat, 02 Jan 2010 00:00:00 GMT</pubDate>
+            <description><![CDATA[用5*5网格
+> 启动一个外部循环(行)，将迭代5次。
+> 在外部循环下开始一个内部循环(列)，迭代相同的次数在内部循环中打印列号。
+
+/*
+ ============================================================================
+ Name        : LearnC002.c
+ Author      : Sp ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[C语言练习-用C程序打印星形左直角三角形]]></title>
+            <link>https://www.springsongs.cn/2010/01/05/program-to-print-right-angle-triangle-with-starpattern/</link>
+            <guid>https://www.springsongs.cn/2010/01/05/program-to-print-right-angle-triangle-with-starpattern/</guid>
+            <pubDate>Tue, 05 Jan 2010 00:00:00 GMT</pubDate>
+            <description><![CDATA[用10*10网格
+>第一行一个星(1行号)
+>第二行两个星(2行号)
+>第三行三个星(3行号)
+>第四行四个星(4行号)
+>以此类推…
+>从规律来看，每行打印的都与行号有关
+
+/*
+ ============================================================================
+ Name        : LearnC005. ...]]></description>
         </item>
         <item>
             <title><![CDATA[C语言练习-用C程序打印数字正方形]]></title>
@@ -94,21 +111,18 @@ int main(){
  Name        : LearnC0 ...]]></description>
         </item>
         <item>
-            <title><![CDATA[C语言练习-用C程序打印星形左直角三角形]]></title>
-            <link>https://www.springsongs.cn/2010/01/05/program-to-print-right-angle-triangle-with-starpattern/</link>
-            <guid>https://www.springsongs.cn/2010/01/05/program-to-print-right-angle-triangle-with-starpattern/</guid>
-            <pubDate>Tue, 05 Jan 2010 00:00:00 GMT</pubDate>
-            <description><![CDATA[用10*10网格
->第一行一个星(1行号)
->第二行两个星(2行号)
->第三行三个星(3行号)
->第四行四个星(4行号)
->以此类推…
->从规律来看，每行打印的都与行号有关
+            <title><![CDATA[C语言练习-用C程序打印星形正方形]]></title>
+            <link>https://www.springsongs.cn/2010/01/01/program-to-print-square-with-star-pattern/</link>
+            <guid>https://www.springsongs.cn/2010/01/01/program-to-print-square-with-star-pattern/</guid>
+            <pubDate>Fri, 01 Jan 2010 00:00:00 GMT</pubDate>
+            <description><![CDATA[用5*5网格
+> 启动一个外部循环(行)，将迭代5次。
+> 在外部循环下开始一个内部循环(列)，迭代相同的次数在内部循环中打印星号。
 
 /*
  ============================================================================
- Name        : LearnC005. ...]]></description>
+ Name        : LearnC001.c
+ Author      : Sp ...]]></description>
         </item>
         <item>
             <title><![CDATA[C语言练习-用C程序打印星形左倒置直角三角形]]></title>
@@ -127,6 +141,21 @@ int main(){
  Name        : LearnC007. ...]]></description>
         </item>
         <item>
+            <title><![CDATA[C语言练习-用C程序打印星形右倒置直角三角形]]></title>
+            <link>https://www.springsongs.cn/2010/01/11/program-to-print-inverted-mirrorright-angle-triangle-with-star-pattern/</link>
+            <guid>https://www.springsongs.cn/2010/01/11/program-to-print-inverted-mirrorright-angle-triangle-with-star-pattern/</guid>
+            <pubDate>Mon, 11 Jan 2010 00:00:00 GMT</pubDate>
+            <description><![CDATA[用10*10网格
+>第0行打印0个空格和10个星号(10-0)
+>第1行打印1个空格和9个星号(10-1)
+>每2行打印2个空格和8个星号(10-2)
+>第3号打印3个空格和7个星号(10-3)
+>以此类推
+>从规律来看，每行打印的都与行号有关
+/*
+ =================================================================== ...]]></description>
+        </item>
+        <item>
             <title><![CDATA[C语言练习-用C程序打印星形左倒置直角三角形]]></title>
             <link>https://www.springsongs.cn/2010/01/08/program-to-print-inverted-right-angle-triangle-with-number-pattern/</link>
             <guid>https://www.springsongs.cn/2010/01/08/program-to-print-inverted-right-angle-triangle-with-number-pattern/</guid>
@@ -141,21 +170,6 @@ int main(){
 /*
  ============================================================================
  Name        : LearnC ...]]></description>
-        </item>
-        <item>
-            <title><![CDATA[C语言练习-用C程序打印星形右倒置直角三角形]]></title>
-            <link>https://www.springsongs.cn/2010/01/11/program-to-print-inverted-mirrorright-angle-triangle-with-star-pattern/</link>
-            <guid>https://www.springsongs.cn/2010/01/11/program-to-print-inverted-mirrorright-angle-triangle-with-star-pattern/</guid>
-            <pubDate>Mon, 11 Jan 2010 00:00:00 GMT</pubDate>
-            <description><![CDATA[用10*10网格
->第0行打印0个空格和10个星号(10-0)
->第1行打印1个空格和9个星号(10-1)
->每2行打印2个空格和8个星号(10-2)
->第3号打印3个空格和7个星号(10-3)
->以此类推
->从规律来看，每行打印的都与行号有关
-/*
- =================================================================== ...]]></description>
         </item>
         <item>
             <title><![CDATA[C语言练习-用C程序打印星形右直角三角形]]></title>
@@ -249,23 +263,6 @@ int main(){
  Name        : main.c
  Author      : SpringSongs
  Version ...]]></description>
-        </item>
-        <item>
-            <title><![CDATA[C语言练习-用C程序打印数字右直角三角形]]></title>
-            <link>https://www.springsongs.cn/2010/01/06/program-to-print-right-angle-triangle-with-number-pattern/</link>
-            <guid>https://www.springsongs.cn/2010/01/06/program-to-print-right-angle-triangle-with-number-pattern/</guid>
-            <pubDate>Wed, 06 Jan 2010 00:00:00 GMT</pubDate>
-            <description><![CDATA[用10*10网格
->第一行一个数字(1行号)
->(2行号)
->第三行三个数字(3行号)
->第四行四个数字(4行号)
->以此类推…
->从规律来看，每行打印的都与行号有关
-/*
- ============================================================================
- Name        : LearnC006.c
- A ...]]></description>
         </item>
         <item>
             <title><![CDATA[C语言练习-用C程序打印星形金字塔]]></title>
